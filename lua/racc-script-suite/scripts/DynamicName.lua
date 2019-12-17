@@ -10,8 +10,8 @@ if table.count(racc.dynamicname.tags) > 3 then tagcount = 3 else tagcount = tabl
       local  v = table.random(racc.dynamicname.tags)
       if table.HasValue( racc.dynamicname.tags.barred, "|" .. v ) == false then
      	 table.insert( racc.dynamicname.tags.barred, "|" .. v)
-      else racc.barrdyntags()
-  	  end
+      else return
+      end
     end)
   RunConsoleCommand( "hostname", racc.dynamicname.name, table.ToString(racc.dynamicname.tags.barred, false) )
 end
