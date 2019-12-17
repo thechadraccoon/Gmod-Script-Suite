@@ -1,6 +1,6 @@
 -- This script is not meant to be edited here please edit variables in config file @ /lua/racc-script-suite/config.lua thx <3
 
-include(racc-script-suite/config.lua) -- Call the configuration gods
+include("racc-script-suite/config.lua") -- Call the configuration gods
 
 
 SetGlobalBool(racctimer, racc.config.timer.time)
