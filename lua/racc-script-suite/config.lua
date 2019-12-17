@@ -8,6 +8,7 @@ racc.config.timer.action = function() end -- Function calling or custom function
 --Dynamic server name stuff
 racc.config.dynamicname.enabled = true -- do we enabled the dynamic server name script?
 racc.config.dynamicname.name = "generic server name" -- Your Server's name
+racc.config.dynamicname.interval = 600 -- at what interval in seconds should the name be updated
 racc.config.dynamicname.tagmode.enabled = true -- do you want tags or custom text?
 racc.config.dynamicname.tags = {generic, gmod, server, tags} -- tags to be dynamicly changed by scipt
 racc.config.dynamicname.customtext = "generic custom text" -- custom text updated every file update(on the server) and startup
