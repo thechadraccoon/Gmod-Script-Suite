@@ -8,7 +8,7 @@ if (racc.config.timer.enabled) then -- If timer is enabled
 else return -- else don't
 end
 
-if (racc.config.Dynamicname.enabled) then -- if dynamic name is enabled
+if (racc.config.dynamicname.enabled) then -- if dynamic name is enabled
   include(racc-script-suite/scripts/DynamicName.lua) -- call dynamice name script
 else return -- else don't
 end
