@@ -7,7 +7,7 @@ SetGlobalBool(racctimer, racc.config.timer.time)
 
 function racctimertracker()
   if GetGlobalBool(racctimer) == 0 then
-      racc.timer.action()
+      racc.config.timer.action()
   else return
   end
 end
