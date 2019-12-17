@@ -2,9 +2,8 @@
 
 include(racc-script-suite/config.lua) -- Call the configuration gods
 
-racc.dynamicname.tags.barred = {}
-
 function racc.barrdyntags()
+racc.dynamicname.tags.barred = {}
 local tagcount
 if table.count(racc.dynamicname.tags) > 3 then tagcount = 3 else tagcount = table.count(racc.dynamicname.tags) end
     timer.Create(raccdynamebarrepeater, 0.01, tagcount, function()
