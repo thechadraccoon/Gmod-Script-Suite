@@ -21,7 +21,7 @@ if GetGlobalBool(racctimerhudenabled) == true then
     end
 
     local titlelabel = vgui.Create( "DLabel", Frame )
-    titlelabel:SetText( GetGlobalBool(racctimertitle) )
+    titlelabel:SetText( GetGlobalString(racctimertitle) )
     titlelabel:SetTextColor( Color( 255, 255, 255 ) )
     titlelabel:CenterHorizontal(0.5)
     titlelabel:CenterVertical(0.25)
