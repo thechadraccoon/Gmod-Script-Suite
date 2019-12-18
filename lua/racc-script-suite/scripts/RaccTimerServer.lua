@@ -6,6 +6,7 @@ include("racc-script-suite/config.lua") -- Call the configuration gods
 SetGlobalstring(racctimer, racc.config.timer.time)
 
 if racc.config.timer.hud == true then
+SetGlobalBool(racctimerhudenabled, true)
 SetGlobalstring(racctimertitle, racc.config.timer.hud.title)
 else return
 end
