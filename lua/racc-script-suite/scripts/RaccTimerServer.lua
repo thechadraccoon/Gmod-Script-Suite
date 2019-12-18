@@ -3,10 +3,15 @@
 include("racc-script-suite/config.lua") -- Call the configuration gods
 
 
-SetGlobalBool(racctimer, racc.config.timer.time)
+SetGlobalstring(racctimer, racc.config.timer.time)
+
+if racc.config.timer.hud == true then
+SetGlobalstring(racctimertitle, racc.config.timer.hud.title)
+else return
+end
 
 function racctimertracker()
-  if GetGlobalBool(racctimer) == 0 then
+  if GetGlobalBool(racctimer) <= 0 then
       racc.config.timer.action()
   else return
   end

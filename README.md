@@ -18,6 +18,7 @@ addons/
     ├ racc-script-suite/
       ├  config.lua
       └ scripts/
-         ├ RaccTimer.lua
+         ├ RaccTimerClient.lua
+         ├ RaccTimerServer.lua
          └ DynamicName.lua
   ```

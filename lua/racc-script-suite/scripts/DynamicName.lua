@@ -17,11 +17,11 @@ if table.count(racc.dynamicname.tags) > 3 then tagcount = 3 else tagcount = tabl
 end
 
 function racc.dynamicname()
-	if racc.dynamicname.tagsmode == true then
-		racc.barrdyntags()
-	else
-		RunConsoleCommand( "hostname", racc.dynamicname.name, racc.dynamicname.customtext )
-	end
+  if racc.dynamicname.tagsmode == true then
+    racc.barrdyntags()
+  else
+    RunConsoleCommand( "hostname", racc.dynamicname.name, racc.dynamicname.customtext )
+  end
 end
 
 timer.Create(raccdyname, racc.config.dynamicname.interval, 0, racc.dynamicname())

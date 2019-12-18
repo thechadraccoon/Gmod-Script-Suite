@@ -7,6 +7,13 @@ if SERVER then
   if (racc.config.timer.enabled) then -- If timer is enabled 
     include("racc-script-suite/scripts/RaccTimerServer.lua") -- call timer script
     AddCSLuaFile("racc-script-suite/scripts/RaccTimerClient.lua")
+
+    if racc.config.timer.hud == true then
+      SetGlobalBool(racctimerhudenabled, true)
+    else
+      SetGlobalBool(racctimerhudenabled, false)
+    end
+
   else return -- else don't
   end
 
